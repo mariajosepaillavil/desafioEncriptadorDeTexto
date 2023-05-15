@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Challenge/style.css">
+    
+        
+    </script>
+    <title> Challenge</title>
+
+    <style>
+        canvas#lienzo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1; /* asegura que el canvas esté detrás de otros elementos */
+        }
+        .container {
+            position: relative;
+            z-index: 1; /* asegura que el contenido esté sobre el canvas */
+        }
+    </style>
+
+</head>
+<body>
+    <canvas id="lienzo"></canvas>
+
+    <div class="container">
+        <div class="logo">
+            
+            <img class="logoImg" src="./img/logo.png" alt="logoAlura">
+            <h1 class="tittle">ENCRIPTADOR DE MENSAJES</h1>
+          
+        </div>
+        <div class="left">
+            <!--<h1>Acá va el panel izquierdo.</h1>-->
+            
+            <input id="inputText" class="text-input" type="text" placeholder="Ingrese el texto aquí...">
+
+        </div>
+        <div class="right">
+            <!--<h1>Acá va el panel derecho.</h1>-->
+            <img id="imgRight" class="characterImg" src="./img/character.png" alt="characterEncriptador">
+            <h1 id="text1">Ningún mensaje fue encontrado</h1>
+            <textarea id="text2" name="name" rows="8" cols="80" >Ingrese el texto que desee encriptar o desencriptar</textarea>
+            <button type="button" id="btn-copy" onclick="copy()">Copiar</button>
+    </div>
+        <div class="left-button">
+            <!--<h1>Acá va el botón izquierdo.</h1>-->
+            <p class="info">Solo minuscúlas y sin acentos</p>
+            <button type="button" id="btn-encrypt" onclick="encrypt()"> Encriptar</button>
+            
+            <button type="button" id="btn-decrypt" onclick="decrypt()"> Desencriptar</button>
+            
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="devInfo">
+            <p id="textFooter">Desarrollado por:
+            <p id='name'> María José Paillavil</p>
+            <!--</p>
+            <img id='github' src="github.png" alt="github"
+                onclick="window.location.href='https://github.com/mariajosepaillavil'">
+            <img id="linkedin" src="linkedin.png" alt="linkedin"
+                onclick="window.location.href='https://www.linkedin.com/in/maria-jose-paillavil-trejos'">
+        </div>
+        <p id="info">
+            Challenge del programa ONE G5 de Oracle + Alura Latam
+            <br>
+            <br>
+            <strong>Challenge ONE Sprint #01:</strong>
+            Construye un encriptador de texto con Javascript.
+            <br>
+            <br>
+            Descripcion:
+            Aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el
+            secreto de la encriptación utilizada.
+            
+        </p>-->
+    </footer>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="/Challenge/script.js"></script>
+    <script type="text/javascript">
+        script.init(document.querySelectorAll(".Output"), {
+            max: 5,
+            speed: 100,
+            glare: true,
+        });
+
+    </script>
+</body>
+</html>

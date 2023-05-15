@@ -1,0 +1,308 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+    background:matrix();
+
+}
+
+.container {
+
+    margin: auto;
+    width: 960px;
+    height: 700px;
+    padding: 5px;
+    background-color: rgba(138, 43, 226, 0.7);
+    border-radius: 24px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transform-style: preserve-5d; /* permite que los elementos hijos se rendericen en 3D */
+    transform: rotateX(0deg) rotateY(0deg); /* aplica una rotación en ambos ejes */
+
+}
+    
+
+.logo{
+
+    width: 100%; /*Se usa porcentaje para hacerlo responsivo.*/
+    float: left;
+    background-color: transparent;
+    margin-top: 1%;
+   
+
+}
+
+.left{
+
+    float: left;
+    width: 70%;
+    height: 70%;
+    border-radius: 24px;
+    background-color: transparent;
+    border-radius: 24px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform-style: preserve-5d; /* permite que los elementos hijos se rendericen en 3D */
+    transform: rotateX(0deg) rotateY(0deg); /* aplica una rotación en ambos ejes */
+    
+
+}
+
+.right{
+
+    float: right;
+    width: 30%; /*Se usa el diferencial del porcentaje utilizado en width del panel izquierdo porcentaje para hacerlo responsivo.*/
+    height: auto;
+    margin-left: auto;
+    background-color: transparent;
+    border-radius: 24px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform-style: preserve-5d; /* permite que los elementos hijos se rendericen en 3D */
+    transform: rotateX(0deg) rotateY(0deg); /* aplica una rotación en ambos ejes */
+    
+
+
+}
+
+.left-button{
+
+    float: left;
+    width: 70%;
+    height: auto;
+    border-radius: 24px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.0);
+    transform-style: preserve-5d; /* permite que los elementos hijos se rendericen en 3D */
+    transform: rotateX(0deg) rotateY(0deg); /* aplica una rotación en ambos ejes */
+
+}
+
+.logoImg{
+
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: inherit;
+    width: 22px;
+    
+}
+
+.tittle{
+
+    float: inherit;
+    text-align: justify;
+    margin-left: 7%;
+    display: flex;
+    background-color: transparent;
+    font-family: monospace;
+    font-size: 3rem;
+    color:white;
+    text-shadow: 0 0 3px rgb(92, 0, 128), 0 0 10px rgb(225, 62, 217), 0 0 20px rgb(124, 0, 128), 0 0 40px rgb(92, 0, 128), 0 0 80px rgba(0, 0, 0, 0.5);
+   
+}
+
+.text-input{
+
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    color: deeppink;
+    font-family: monospace;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(231, 205, 255, 0.7);
+    border-radius: 5px;
+    
+
+}
+
+#imgRight{
+    margin-top: 12%;
+    margin-left: 2%;
+    width: 90%;
+    height: auto;
+}
+
+#text1{
+
+    margin-left: 7%;
+    margin-right: 5%;
+    color:orchid;
+    font-family:monospace;
+    text-align: center;
+    
+}
+
+#text2{
+
+    float: left;
+    margin-left: 10%;
+    color: purple; 
+    width: 80%;
+    height: 10%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    background-color: rgba(231, 205, 255, 0.7);
+    
+    
+
+}
+
+.text2 {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+#btn-encrypt{
+
+    padding: 24px;
+    margin-left: 15%;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    background-color: lightslategray;
+    color: white; /* color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    transition: background-color 0.3s ease; /* transición suave de 0.3 segundos */
+  }
+  
+  #btn-encrypt:hover {
+    background-color: #FF69B4; /* color rosa iluminado */
+    box-shadow: 0 0 10px 2px #ff00ff;
+
+}
+  
+#btn-decrypt{
+
+    padding: 24px;
+    margin-left: 15%;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    background-color: lightslategray;
+    color: white; /* color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    transition: background-color 0.3s ease; /* transición suave de 0.3 segundos */
+
+}
+
+ #btn-decrypt:hover {
+    background-color: #FF69B4; /* color rosa iluminado */
+    box-shadow: 0 0 10px 2px #ff00ff;
+
+}
+
+#btn-copy{
+
+    padding: 24px;
+    margin-left: 35%;
+    margin-top: 5%;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    background-color: lightslategray;
+    color: white; /* color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    text-align: justify;
+    transition: background-color 0.3s ease; /* transición suave de 0.3 segundos */
+
+}
+
+#btn-copy:hover {
+    background-color: #7a21a3; /* color rosa iluminado */
+    box-shadow: 0 0 10px 2px #cc00ff;
+
+}
+
+
+.lienzo{
+    position: absolute;
+    z-index: -1;
+}
+
+footer{
+    color: #fff;
+    width: 100vw;
+    height: auto;
+    background-color: #1f201f;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1; /* asegura que el canvas esté detrás de otros elementos */
+    
+
+   
+}
+
+#textFooter{
+    all: unset;
+    width: 80vw;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    padding-left: 500px;
+    white-space: nowrap;
+    font-family:monospace;
+}
+
+#name{
+    all: unset;
+    padding-top: 40px;
+    padding-left: 10px;
+    z-index: 1;
+    white-space: nowrap;
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+}
+
+.Card {
+    padding: relative;
+    width: 750px;
+    min-height: 500px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 10);
+    border-left: 1px solid rgba(255, 255, 255, 10);
+    backdrop-filter: blur(5px);
+    color: var(--color10);
+}
+
+.info{
+    color: rgba(253, 26, 181, 0.884);
+    font-family: monospace;
+    font-size: 11px;
+    margin-left: 120px;
+    text-align: justify;
+    word-wrap: break-word;
+    
+
+
+}
+
